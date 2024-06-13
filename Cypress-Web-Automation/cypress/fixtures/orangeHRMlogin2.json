@@ -1,0 +1,16 @@
+[    
+{
+    "username": "admin",
+    "password": "admin123"
+},
+{
+    "username": "abc",
+    "password": "admin123",
+    "expected": "Invalid credentials"
+},
+{
+    "username": "admin",
+    "password": "xyz",
+    "expected": "Invalid credentials"
+}
+]
