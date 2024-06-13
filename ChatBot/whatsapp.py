@@ -1,8 +1,8 @@
 from twilio.rest import Client  # pip3 install twilio
 import openpyxl
 
-account_sid = 'ACb430a4af7746e741b40038db4229ecc8'
-auth_token = '3bbee8a3ecc3dc2fe882f7ce0c3f7800'
+account_sid = ''
+auth_token = ''
 client = Client(account_sid, auth_token)
 
 
