@@ -1,6 +1,6 @@
 const {test, expect} = require('@playwright/test');
 
-//https://www.youtube.com/watch?v=Yqyhkk5Tr3E&ab_channel=SDET-QA
+//SDET-QA
 
 test('Home Page', async ({page})=>{ //page will have all the methods
     await page.goto('https://www.demoblaze.com/index.html');

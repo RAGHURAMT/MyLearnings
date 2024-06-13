@@ -7,7 +7,7 @@ import api.payload.User;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-//https://www.youtube.com/watch?v=a4VDgcoltBw&t=4635s&ab_channel=SDET-QA
+//SDET-QA
 public class UserEndPoints {
 	
 	//This file is created to perform CRUD operations (Create, Retrieve, Update, Delete) on the USER API

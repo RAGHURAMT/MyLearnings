@@ -1,7 +1,5 @@
 package sorting;
 
-// https://www.youtube.com/watch?v=v6hmmfIiKu4&list=PLlhM4lkb2sEhY6YLVcRp0YCkstitjw6AI&index=1&t=1785s
-
 public class bubblesort {
     public static void main(String[] args) {
         // bubble sort will have n-1 rounds. If no of elements in an array are 10, then

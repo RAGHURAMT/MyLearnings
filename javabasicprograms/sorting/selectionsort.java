@@ -2,7 +2,7 @@ package sorting;
 
 public class selectionsort {
     public static void main(String[] args) {
-        // https://www.youtube.com/watch?v=GRNOoZeV6xc&list=PLlhM4lkb2sEhY6YLVcRp0YCkstitjw6AI&index=2
+        
         // Selection sort is a combination of searching and sorting. It will pick the
         // first element of an array and compares with the smallest elemnt in the array.
         // Once it finds the smallest number, it will swap the numbers. Then again it

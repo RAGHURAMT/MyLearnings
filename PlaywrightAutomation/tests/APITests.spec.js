@@ -1,7 +1,7 @@
 const {test, expect} = require('@playwright/test');
 const { request } = require('http');
 
-// https://www.youtube.com/watch?v=Yqyhkk5Tr3E&ab_channel=SDET-QA
+// SDET-QA
 
 var user_id;
 

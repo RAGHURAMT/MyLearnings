@@ -81,7 +81,7 @@ test('Auto suggest dropdown', async({page})=>{
 
 test.only('Hidden options dropdown', async({page})=>{
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'); 
-    //https://www.youtube.com/watch?v=n11T4rLJURY&list=PLUDwpEzHYYLsw33jpra65LIvX1nKWpp7-&index=15&ab_channel=SDET-QA
+    //SDET-QA
     await page.locator("[name='username']").fill('Admin');
     await page.locator("[name='password']").fill('admin123');
     await page.locator("[type='submit']").click();
