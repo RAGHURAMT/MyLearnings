@@ -11,7 +11,7 @@ import api.payload.User;
 import io.restassured.response.Response;
 
 public class UserTests {
-//	https://www.youtube.com/watch?v=a4VDgcoltBw&t=4635s&ab_channel=SDET-QA
+//	SDET-QA
 	
 	Faker faker;
 	User userPayload;

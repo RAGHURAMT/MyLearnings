@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class duplicateElements {
-    // https://www.youtube.com/watch?v=Y1xfMU4xyDE&list=PLlhM4lkb2sEiB1S_dHX8id1i_IN81t-q2&index=4&ab_channel=SmartProgramming
+    // SmartProgramming
     public static void main(String[] args) {
         bruteForceMethod();
         setInterfaceMethod();

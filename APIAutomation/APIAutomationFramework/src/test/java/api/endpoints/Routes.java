@@ -1,7 +1,7 @@
 package api.endpoints;
 
 
-//https://www.youtube.com/watch?v=tXo2vO5QNAw&t=1974s&ab_channel=SDET-QA
+//SDET-QA
 
 public class Routes {
 	
