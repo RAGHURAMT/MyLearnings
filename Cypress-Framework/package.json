@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test:registerFlow": "npx cypress run --spec cypress/e2e/tests/registerTest.cy.js",
+    "test:addToCartFlow":"npx cypress run --spec cypress/e2e/tests/addToCartTest.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
