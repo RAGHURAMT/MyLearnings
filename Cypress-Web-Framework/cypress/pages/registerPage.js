@@ -13,7 +13,6 @@ export class registerPage{
 
     openURL(){
         cy.visit(Cypress.env('URL'));
-
     }
 
     enterFirstName(FName){

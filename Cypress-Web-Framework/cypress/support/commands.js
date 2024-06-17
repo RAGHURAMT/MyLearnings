@@ -26,3 +26,10 @@
 
 /// <reference types="Cypress"/>
 // <reference types="cypress-xpath"/>
+
+Cypress.Commands.add('login', (email, password)=>{
+    cy.visit(''); //This will pickup baseurl from cypress.config.js
+    cy.get('#input-email').type(email);
+    cy.get('#input-password').type(password);
+    cy.get("input[value='Login']").click();
+})
