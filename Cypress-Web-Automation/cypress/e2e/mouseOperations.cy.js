@@ -28,6 +28,10 @@ describe('Mouse operations', ()=>{
         //npm install --save-dev @4tw/cypress-drag-drop
         cy.visit('http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html');
         cy.get('#box6').drag('#box106',{force:true}); //Here, force is not mandatory.We add it only when there is an error.
+
+        // Alternative way
+        // cy.get('.draggable').trigger('dragstart');
+        // cy.get('.droppable').trigger('drop');
     })
 
     it('Scroll the page', ()=>{
