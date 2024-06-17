@@ -1,16 +1,16 @@
-import { registerPage } from "../../pages/registerPage"
-import registerData from "../../fixtures/registerData.json"
+import { registerPage } from '../../pages/registerPage'
+import testData from '../../fixtures/testData.json'
 
 const registerObj = new registerPage();
 
 describe('Test Automation', ()=>{
     it('Register flow', ()=>{
         registerObj.openURL();
-        registerObj.enterFirstName(registerData.firstName);
-        registerObj.enterLastName(registerData.lastName);
-        registerObj.enterEmail(registerData.email);
-        registerObj.enterTelephone(registerData.telephone);
-        registerObj.enterPassword(registerData.password);
+        registerObj.enterFirstName(testData.registerForm.firstName);
+        registerObj.enterLastName(testData.registerForm.lastName);
+        registerObj.enterEmail(testData.registerForm.email);
+        registerObj.enterTelephone(testData.registerForm.telephone);
+        registerObj.enterPassword(testData.registerForm.password);
         registerObj.selectCheckBox();
         registerObj.clickContinue();
     })
