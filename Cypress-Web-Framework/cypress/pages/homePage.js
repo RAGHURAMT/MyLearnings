@@ -19,7 +19,4 @@ export class homePage{
     verifySuccessMessage(){
         return cy.get(this.weblocators.successMessage);
     }
-
-
-
 }
