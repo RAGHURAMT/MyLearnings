@@ -1,0 +1,19 @@
+{
+    "registerForm": {
+      "firstName": "TestFirstName",
+      "lastName": "TestLastName",
+      "email": "TestFirstName.TestLastName@dispostable.com",
+      "telephone": "1234556",
+      "password": "TestFirstName_TestLastName@123"
+    },
+    "login": {
+      "username": "TestFirstName.TestLastName@dispostable.com",
+      "password": "TestFirstName_TestLastName@123"
+    },
+    "product": {
+      "productName": "MacBook"
+    },
+    "message": {
+      "successMessage": "Success: You have added MacBook to your shopping cart!"
+    }
+  }
