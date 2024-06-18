@@ -19,3 +19,17 @@ jobs:
         with:
           name: Mochawesome HTML Report
           path: cypress/reports/html
+
+      - name: Slack Notification
+        if: always()
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          # SLACK_CHANNEL: general
+          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: 'Test Automation Report - https://github.com/RAGHURAMT/MyLearnings/actions/runs/${{github.run_id}}'
+          SLACK_TITLE: Cypress Tests
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }} 
+          # WEBHOOK is the url provided by the slack which allows github to send messages to the slack channel
+          # WEBHOOK URL will be generated from the slack channel -> Select Slack channel -> Integrations Tab -> Add an App button -> Search & Install "Incoming WebHooks" -> Add to slack -> Select channel name under Post to Channel -> Add Incoming webHook integration button -> Copy WebHook URL 
+          # Add the copied WebHook URL in -> GitHub Settings -> Secrets and variables under security -> Click Actions -> New repo secret -> pass name as SLACK_WEBHOOK and paste the url in Secret text box -> Add Secret 
