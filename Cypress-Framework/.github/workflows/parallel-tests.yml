@@ -27,11 +27,13 @@ jobs:
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
+        if: always() # To generate reports for failures tests also.
         uses: cypress-io/github-action@v6
         with:
           command: npm run test:addToCartFlow
       
       - name: Cypress Test Report
+        if: always() # To generate reports for failures tests also.
       - uses: actions/upload-artifact@v4
         with:
           name: Mochawesome HTML Report - Add To Cart Flow
