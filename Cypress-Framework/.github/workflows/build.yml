@@ -14,6 +14,7 @@ jobs:
           command: npm run test:registerFlow
 
       - name: Cypress Test Report
+        if: always() # To generate reports for failures tests also.
       - uses: actions/upload-artifact@v4
         with:
           name: Mochawesome HTML Report
